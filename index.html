@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20231230024254">
+   <!--<link rel="stylesheet" href="files/before-after-for-work/css/before-after-for-work.css?_v=20231230024254">-->
+   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20231230024254">
+   <link rel="stylesheet" href="css/style.min.css?_v=20231230024254">
+   <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
+   <title>Главная</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <div class="header__wrapper lock-padding">
+      <div id="header-container" class="n_container header-container">
+         <div class="header__blockLogo">
+            <a href="/">
+               <img src="images/svg/logo.svg" alt="">
+            </a>
+         </div>
+         <div class="header__menu menu">
+            <div class="menu__body">
+               <!--<div class="menu__body-top n_container">
+                  <button type="button" class="header__close-menu">
+                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M22.5242 25.26L33.663 36.3989C34.0344 36.7575 34.5318 36.956 35.0481 36.9515C35.5644 36.947 36.0582 36.74 36.4233 36.3749C36.7884 36.0098 36.9954 35.516 36.9999 34.9997C37.0044 34.4834 36.8059 33.986 36.4473 33.6147L25.3084 22.4758L36.4473 11.337C36.8059 10.9656 37.0044 10.4682 36.9999 9.95193C36.9954 9.43565 36.7884 8.94179 36.4233 8.57672C36.0582 8.21164 35.5644 8.00456 35.0481 8.00007C34.5318 7.99559 34.0344 8.19406 33.663 8.55273L22.5242 19.6916L11.3853 8.55273C11.0123 8.20292 10.5178 8.01197 10.0065 8.02027C9.49516 8.02857 9.00712 8.23548 8.64564 8.59722C8.28416 8.95896 8.0776 9.44714 8.06965 9.95847C8.06171 10.4698 8.25302 10.9642 8.60309 11.337L19.74 22.4758L8.60112 33.6147C8.41306 33.7963 8.26306 34.0136 8.15986 34.2538C8.05666 34.494 8.00235 34.7524 8.00007 35.0139C7.9978 35.2753 8.04762 35.5346 8.14663 35.7766C8.24563 36.0186 8.39184 36.2384 8.57672 36.4233C8.7616 36.6082 8.98144 36.7544 9.22343 36.8534C9.46542 36.9524 9.7247 37.0022 9.98615 36.9999C10.2476 36.9977 10.506 36.9433 10.7462 36.8401C10.9864 36.7369 11.2037 36.5869 11.3853 36.3989L22.5242 25.26Z"
+                           fill="#171717" />
+                     </svg>
+                  </button>
+               </div>-->
+               <nav class="menu-topmenu-container">
+                  <ul class="menu__list">
+                     <li class="menu-item current-menu-item current_page_item">
+                        <a class="menu__link" href="#">About</a>
+                     </li>
+                     <li class="menu-item menu-item-has-children">
+                        <a class="menu__link" href="#">For Sale</a>
+                        <span class="menu__arrow">
+                           <svg width="10" height="10" viewBox="0 0 24 24">
+                              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
+                                 fill="currentColor" />
+                           </svg>
+                        </span>
+                        <ul class="menu__sub-list">
+                           <li class="menu-item">
+                              <a class="menu__link" href="#">Trucks For Sale</a>
+                           </li>
+                           <li class="menu-item current-menu-item current_page_item">
+                              <a class="menu__link" href="#">Trailers For Sale</a>
+                           </li>
+                           <li class="menu-item">
+                              <a class="menu__link" href="#">Semi-trailer For Sale</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <!--- current-menu-item current_page_item -->
+                     <li class="menu-item menu-item-has-children current-menu-item current_page_item">
+                        <a class="menu__link" href="#">For Rent</a>
+                        <span class="menu__arrow">
+                           <svg width="10" height="10" viewBox="0 0 24 24">
+                              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
+                                 fill="currentColor" />
+                           </svg>
+                        </span>
+                        <ul class="menu__sub-list">
+                           <li class="menu-item">
+                              <a class="menu__link" href="#">Sub MENU 1</a>
+                           </li>
+                           <li class="menu-item">
+                              <a class="menu__link" href="#">SUB MENU 2</a>
+                           </li>
+                           <li class="menu-item current-menu-item current_page_item">
+                              <a class="menu__link" href="#">SUB MENU 3</a>
+                           </li>
+                           <li class="menu-item">
+                              <a class="menu__link" href="#">SUB MENU 4</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="menu-item">
+                        <a class="menu__link" href="#">Request a Quote</a>
+                     </li>
+                     <li class="menu-item">
+                        <a class="menu__link" href="blog.html">Blog</a>
+                     </li>
+                     <li class="menu-item">
+                        <a class="menu__link" href="contact-us.html">Contact Us</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <a href="tel:208555-0112" class="header__phone">(208) 555-0112</a>
+         <a data-da="menu__body, last, 1099" href="#" class="header__btn n_btn hidden">Apply Now</a>
+         <button type="button" class="header__btn-menu n_btn menu__icon">Menu</button>
+      </div>
+   </div>
+</header>
+      <main class="main front-page">
+         <section class="first-screen wrap-lazy-load-image">
+            <div class="n_container">
+               <div class="first-screen__block">
+                  <h1>New flatbad trailers available for rent</h1>
+                  <div class="first-screen__columns">
+                     <div class="first-screen__column">
+                        <p>2023-2024 MAC & Wabash, All aluminum, 53ft</p>
+                     </div>
+                     <div class="first-screen__column">
+                        <a href="#" class="n_btn">Apply Now</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <img class="first-screen__bg" src="images/Gallery/gallery-5.png" alt="">
+         </section>
+         <section class="our-offers">
+            <div class="n_container">
+               <h2 class="n_sec-title">Our Offers</h2>
+               <div class="our-offers__items">
+                  <a href="#" class="our-offers__item">
+                     <div class="our-offers__blockImage wrap-lazy-load-image">
+                        <img src="images/our-offers-image-1.png" alt="">
+                     </div>
+                     <h3 class="our-offers__title">Trucks For Sale</h3>
+                     <div class="our-offers__blockText">
+                        <p>Large range of trucks available, wide range of brands</p>
+                     </div>
+                     <div class="our-offers__btn n_btn">See Details</div>
+                  </a>
+                  <a href="#" class="our-offers__item">
+                     <div class="our-offers__blockImage wrap-lazy-load-image">
+                        <img src="images/our-offers-image-2.jpg" alt="">
+                     </div>
+                     <h3 class="our-offers__title">Trailers For Rent</h3>
+                     <div class="our-offers__blockText">
+                        <p>Reefers, dryvans, flatbeds!</p>
+                     </div>
+                     <div class="our-offers__btn n_btn">See Details</div>
+                  </a>
+                  <a href="#" class="our-offers__item">
+                     <div class="our-offers__blockImage wrap-lazy-load-image">
+                        <img src="images/our-offers-image-3.jpg" alt="">
+                     </div>
+                     <h3 class="our-offers__title">Get lease</h3>
+                     <div class="our-offers__blockText">
+                        <p>Quality leasing and customer service. We ensure that all of our inventory is properly cared for and maintained.</p>
+                     </div>
+                     <div class="our-offers__btn n_btn">See Details</div>
+                  </a>
+               </div>
+            </div>
+         </section>
+         <section class="schedule">
+            <div class="n_container">
+               <div class="schedule__items">
+                  <div class="schedule__item">
+                     <div class="schedule__blockImage wrap-lazy-load-image">
+                        <img src="images/Gallery/gallery-5.png" alt="">
+                     </div>
+                     <a href="#" class="schedule__btn n_btn">Apply Now</a>
+                  </div>
+                  <div class="schedule__item">
+                     <div class="schedule__item-column">
+                        <div class="schedule__item-column-content">
+                           <h5>24/7 support</h5>
+                           <p>Call us: <a href="tel:208555-0112">(208) 555-0112</a></p>
+                        </div>
+                     </div>
+                     <div class="schedule__item-column">
+                        <div class="schedule__item-column-content">
+                           <h5>Working hours:</h5>
+                           <p>Mon to Fri - 7h/20h</p>
+                        </div>
+                     </div>
+                     <div class="schedule__item-column">
+                        <div class="schedule__item-column-content">
+                           <h5>Send us a message:</h5>
+                           <p><a href="mailto:timetolease@gmail.com">timetolease@gmail.com</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="about-time">
+            <div class="n_container">
+               <h2 class="n_sec-title">About Time To Lease</h2>
+               <div class="about-time__items">
+                  <div class="about-time__item">
+                     <div class="about-time__item-content">
+                        <h3>Dolor sit amet consectetur. Augue volutpat donec ultrices aliquet pellentesque.</h3>
+                        <div class="about-time__blockText">
+                           <p>Lorem ipsum dolor sit amet consectetur. Iaculis amet sem quisque integer arcu ipsum. Hendrerit tellus odio tristique fermentum nunc consectetur quis. Dictum fusce massa neque vel tellus. Et pharetra venenatis non egestas pellentesque tempor ullamcorper egestas volutpat. Cras in augue ut cursus. Id ornare purus lorem nulla elit massa orci.</p>
+                           <p>A nisl nunc gravida orci et vulputate vulputate nisl. Amet porttitor at pretium hendrerit proin amet maecenas. Congue viverra mollis non tristique nisl sit fusce. Mi id ullamcorper nec ut eu placerat pellentesque auctor dui. Velit venenatis rhoncus nisl ante</p>
+                        </div>
+                        <div class="about-time__wrap-btn">
+                           <a href="#" class="about-time__btn n_btn">Read More</a>
+                           <ul class="about-time__social">
+                              <li>
+                                 <a href="https://facebook.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="24" viewBox="0 0 13 24" fill="none">
+                                       <path d="M0.964313 7.82981H3.84089V4.17023C3.84089 4.15905 3.84161 4.14804 3.843 4.13724C3.90228 3.01257 4.1296 1.99613 4.65355 1.24997C5.19701 0.476008 6.042 0 7.3194 0H11.926C12.067 0 12.1814 0.114328 12.1814 0.255325V3.94399C12.1814 4.08499 12.067 4.19932 11.926 4.19932H10.1076C9.6385 4.19932 9.28656 4.27116 9.05827 4.45969L8.89571 4.26323L9.05827 4.46011C9.05333 4.46418 9.04828 4.46801 9.04315 4.47166C8.83153 4.65523 8.71225 4.96377 8.68632 5.44089H8.68667V7.82979H11.926C12.067 7.82979 12.1814 7.94412 12.1814 8.08512V12C12.1814 12.141 12.067 12.2553 11.926 12.2553H8.68667V23.7447C8.68667 23.8857 8.57234 24 8.43135 24H4.09621C3.95522 24 3.84089 23.8857 3.84089 23.7447V12.2553H0.96431C0.823313 12.2553 0.708984 12.141 0.708984 12V8.08512C0.708984 7.94412 0.823316 7.82981 0.964313 7.82981Z" fill="black"/>
+                                    </svg>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://www.instagram.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                       <path d="M18.4884 4.41379C17.7109 4.41379 17.084 5.04075 17.084 5.81818C17.084 6.59561 17.7109 7.22257 18.4884 7.22257C19.2658 7.22257 19.8928 6.59561 19.8928 5.81818C19.8928 5.04075 19.2658 4.41379 18.4884 4.41379ZM12.2188 6.21944C8.95858 6.21944 6.30027 8.87774 6.30027 12.1379C6.30027 15.3981 8.95858 18.0564 12.2188 18.0564C15.479 18.0564 18.1373 15.3981 18.1373 12.1379C18.1373 8.87774 15.479 6.21944 12.2188 6.21944ZM12.2188 15.9498C10.1122 15.9498 8.43194 14.2445 8.43194 12.163C8.43194 10.0564 10.1373 8.37617 12.2188 8.37617C14.3254 8.37617 16.0056 10.0815 16.0056 12.163C16.0056 14.2445 14.3003 15.9498 12.2188 15.9498ZM24.1812 7.22257C24.1812 3.23511 20.946 0 16.9586 0H7.40372C3.41626 0 0.181152 3.23511 0.181152 7.22257V16.7774C0.181152 20.7649 3.41626 24 7.40372 24H16.9335C20.921 24 24.1561 20.7649 24.1561 16.7774V7.22257H24.1812ZM21.899 16.7523C21.899 19.4859 19.667 21.7179 16.9335 21.7179H7.40372C4.67018 21.7179 2.43821 19.4859 2.43821 16.7523V7.22257C2.43821 4.46395 4.6451 2.25705 7.40372 2.25705H16.9335C19.667 2.25705 21.899 4.48903 21.899 7.22257V16.7523Z" fill="black"/>
+                                    </svg>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://www.linkedin.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                                       <path d="M25.2907 23.9992V14.715C25.2907 9.74014 22.6353 7.42536 19.0949 7.42536C16.2379 7.42536 14.9573 8.99706 14.2441 10.1003V7.80592H8.8612C8.93261 9.32584 8.8612 23.9992 8.8612 23.9992H14.2441V14.9559C14.2441 14.4733 14.2786 13.9891 14.4214 13.6439C14.8098 12.6764 15.6957 11.6751 17.1819 11.6751C19.1302 11.6751 19.9086 13.1597 19.9086 15.3364V24L25.2907 23.9992ZM3.19037 5.5955C5.06652 5.5955 6.23647 4.35101 6.23647 2.79657C6.20195 1.2084 5.06731 0 3.22647 0C1.38563 0 0.181152 1.20761 0.181152 2.79657C0.181152 4.35101 1.34953 5.5955 3.15663 5.5955H3.19037ZM5.8818 23.9992V7.80592H0.499729V23.9992H5.8818Z" fill="black"/>
+                                    </svg>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://web.whatsapp.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                       <g clip-path="url(#about_time_icon)">
+                                          <path d="M23.7471 11.3344C23.719 14.3062 22.9549 16.6312 21.3659 18.6515C19.6596 20.8219 17.4377 22.2 14.719 22.7578C12.619 23.1844 10.5752 22.9969 8.56899 22.2703C8.12368 22.1062 7.68774 21.914 7.27055 21.6844C7.14399 21.614 7.03618 21.6047 6.89555 21.6515C4.99712 22.2656 3.09399 22.875 1.19087 23.4797C1.10649 23.5078 0.993992 23.5875 0.928367 23.5265C0.853367 23.4515 0.947117 23.339 0.975242 23.25C1.35493 22.1203 1.73462 20.9859 2.11899 19.8562C2.35337 19.1672 2.57837 18.4828 2.82212 17.7984C2.88774 17.6203 2.8643 17.4844 2.76587 17.3203C2.28305 16.4953 1.9268 15.614 1.67368 14.6906C1.20024 12.9562 1.14868 11.2031 1.51899 9.44998C1.92212 7.53748 2.76587 5.83123 4.0643 4.35936C5.63462 2.57811 7.57055 1.40154 9.87212 0.834355C11.3393 0.473418 12.8206 0.417168 14.3112 0.660918C16.2612 0.979668 18.019 1.75311 19.5518 2.99998C21.1456 4.29842 22.3081 5.91092 23.0393 7.84685C23.4424 8.89217 23.7612 10.6031 23.7471 11.3344ZM3.78774 20.6953C4.95024 20.3203 6.06118 19.964 7.16274 19.6031C7.30805 19.5562 7.42524 19.5656 7.5518 19.65C7.97368 19.9312 8.42837 20.1562 8.89712 20.3531C10.4206 21 12.0049 21.2344 13.6409 21.0234C15.6471 20.7656 17.4096 19.9594 18.8909 18.5578C20.7565 16.7906 21.7549 14.625 21.844 12.0656C21.9284 9.55779 21.1221 7.35467 19.4393 5.48436C17.8409 3.70779 15.8346 2.69529 13.4674 2.44217C11.4096 2.22186 9.48305 2.66717 7.7018 3.73592C6.17837 4.65467 5.01118 5.90623 4.20024 7.48592C3.30493 9.22498 3.00024 11.0719 3.25805 13.0078C3.45024 14.4703 3.97524 15.8156 4.81899 17.025C4.91274 17.1609 4.94087 17.2734 4.88462 17.4328C4.71118 17.9109 4.55649 18.3937 4.39243 18.8719C4.19555 19.4625 4.00337 20.0531 3.78774 20.6953Z" fill="black"/>
+                                          <path d="M6.90004 9.12665C6.92348 8.01103 7.31723 7.18134 8.06254 6.5204C8.3016 6.30478 8.59691 6.21103 8.92973 6.2579C9.07035 6.27665 9.21098 6.29071 9.3516 6.28134C9.6141 6.26728 9.79223 6.39384 9.88129 6.62353C10.1954 7.43915 10.5 8.25478 10.8047 9.07509C10.9079 9.35634 10.7297 9.57665 10.5797 9.77821C10.4063 10.0173 10.1954 10.2282 9.9891 10.4392C9.77816 10.6548 9.75004 10.7767 9.89535 11.0392C10.7438 12.5813 11.9344 13.7673 13.5516 14.4985C13.6079 14.522 13.6641 14.5548 13.7204 14.5829C13.936 14.6813 14.1282 14.6579 14.2922 14.4704C14.5922 14.1188 14.9204 13.7954 15.1969 13.4251C15.3797 13.1813 15.5063 13.1392 15.7829 13.261C16.6079 13.6173 17.3813 14.0673 18.1688 14.5032C18.3141 14.5829 18.3657 14.7048 18.361 14.8735C18.3188 16.2563 17.5266 16.9782 16.1344 17.297C15.4594 17.4517 14.836 17.2829 14.2172 17.0579C12.9188 16.5892 11.6672 16.036 10.6172 15.1079C9.78285 14.3673 9.04691 13.5423 8.42348 12.6188C7.94535 11.9063 7.44848 11.2079 7.17191 10.3782C7.01254 9.93759 6.89535 9.48759 6.90004 9.12665Z" fill="black"/>
+                                       </g>
+                                       <defs>
+                                          <clipPath id="about_time_icon">
+                                             <rect width="24" height="24" fill="white" transform="translate(0.291016)"/>
+                                          </clipPath>
+                                       </defs>
+                                    </svg>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://www.tiktok.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                       <path d="M19.6124 5.56219C19.4605 5.4837 19.3127 5.39765 19.1694 5.30437C18.7528 5.02896 18.3709 4.70445 18.0318 4.33781C17.1833 3.36703 16.8665 2.38219 16.7497 1.69266H16.7544C16.6569 1.12031 16.6972 0.75 16.7033 0.75H12.839V15.6928C12.839 15.8934 12.839 16.0917 12.8305 16.2877C12.8305 16.312 12.8282 16.3345 12.8268 16.3608C12.8268 16.3716 12.8268 16.3828 12.8244 16.3941C12.8244 16.3969 12.8244 16.3997 12.8244 16.4025C12.7837 16.9386 12.6118 17.4566 12.3239 17.9107C12.0361 18.3648 11.641 18.7413 11.1735 19.0069C10.6862 19.2841 10.1352 19.4295 9.57458 19.4287C7.77412 19.4287 6.3149 17.9606 6.3149 16.1475C6.3149 14.3344 7.77412 12.8662 9.57458 12.8662C9.9154 12.8659 10.2541 12.9196 10.5782 13.0252L10.5829 9.09047C9.59913 8.9634 8.59973 9.04158 7.64773 9.32008C6.69572 9.59858 5.81176 10.0714 5.05161 10.7086C4.38555 11.2873 3.82559 11.9778 3.39693 12.7491C3.2338 13.0303 2.61833 14.1605 2.5438 15.9947C2.49693 17.0358 2.80958 18.1144 2.95865 18.5602V18.5695C3.0524 18.832 3.41568 19.7278 4.00771 20.483C4.4851 21.0887 5.04912 21.6208 5.68161 22.0622V22.0528L5.69099 22.0622C7.56177 23.3334 9.63599 23.25 9.63599 23.25C9.99505 23.2355 11.1979 23.25 12.5638 22.6027C14.0788 21.885 14.9413 20.8158 14.9413 20.8158C15.4923 20.1769 15.9305 19.4488 16.2369 18.6628C16.5866 17.7436 16.7033 16.6411 16.7033 16.2005V8.27297C16.7502 8.30109 17.3746 8.71406 17.3746 8.71406C17.3746 8.71406 18.2741 9.29062 19.6776 9.66609C20.6844 9.93328 22.041 9.98953 22.041 9.98953V6.15328C21.5657 6.20484 20.6005 6.05484 19.6124 5.56219Z" fill="black"/>
+                                    </svg>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="about-time__item">
+                     <div class="about-time__blockImage wrap-lazy-load-image">
+                        <img src="images/about-time-image.jpg" alt="About Time To Lease">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="reviews">
+            <div class="n_container">
+               <h2 class="n_sec-title">Reviews</h2>
+            </div>
+            <div class="reviews__block">
+               <div class="reviews__google-widget">
+
+               </div>
+               <a href="#" class="reviews__block-btn n_btn">Leave a review</a>
+            </div>
+         </section>
+         <section class="our-partners">
+            <div class="n_container">
+               <h2 class="n_sec-title">Our Partners</h2>
+               <div class="our-partners-wrap-slider">
+                  <div class="our-partners-slider swiper-conteiner">
+                     <div class="swiper-wrapper">
+                        <div class="our-partners__slide swiper-slide">
+                           <div class="our-partners__blockImage">
+                              <img src="images/svg/our-partners-icon-1.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="our-partners__slide swiper-slide">
+                           <div class="our-partners__blockImage">
+                              <img src="images/svg/our-partners-icon-2.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="our-partners__slide swiper-slide">
+                           <div class="our-partners__blockImage">
+                              <img src="images/svg/our-partners-icon-3.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="our-partners__slide swiper-slide">
+                           <div class="our-partners__blockImage">
+                              <img src="images/svg/our-partners-icon-2.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="our-partners__slide swiper-slide">
+                           <div class="our-partners__blockImage">
+                              <img src="images/svg/our-partners-icon-3.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="our-partners__slide swiper-slide">
+                           <div class="our-partners__blockImage">
+                              <img src="images/svg/our-partners-icon-1.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="our-partners__slide swiper-slide">
+                           <div class="our-partners__blockImage">
+                              <img src="images/svg/our-partners-icon-2.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="our-partners__slide swiper-slide">
+                           <div class="our-partners__blockImage">
+                              <img src="images/svg/our-partners-icon-3.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="our-partners__slide swiper-slide">
+                           <div class="our-partners__blockImage">
+                              <img src="images/svg/our-partners-icon-1.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="our-partners__slide swiper-slide">
+                           <div class="our-partners__blockImage">
+                              <img src="images/svg/our-partners-icon-2.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="our-partners__slide swiper-slide">
+                           <div class="our-partners__blockImage">
+                              <img src="images/svg/our-partners-icon-3.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="our-partners__wrap-arrows">
+                     <div id="our-partners-btnn-prev" class="swiper-btn prev">
+                        <img src="images/svg/slider-arrow.svg" alt="">
+                     </div>
+                     <div id="our-partners-btnn-next" class="swiper-btn next">
+                        <img src="images/svg/slider-arrow.svg" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="column-info">
+            <div class="n_container">
+               <div class="column-info__items">
+                  <div class="column-info__item">
+                     <p>01</p>
+                     <h5>Amet consectetur. Lacus id justo nunc amet rutrum.</h5>
+                  </div>
+                  <div class="column-info__item">
+                     <p>02</p>
+                     <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+                  </div>
+                  <div class="column-info__item">
+                     <p>03</p>
+                     <h5>Lacus id justo nunc amet rutrum.</h5>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="last-news">
+            <div class="n_container">
+               <h2 class="n_sec-title">Last News</h2>
+               <div class="last-news__items">
+                  <a href="single.html" class="last-news__item">
+                     <div class="last-news__blockImage">
+                        <img src="images/gallery/gallery-1.png" alt="">
+                     </div>
+                     <div class="last-news__blockDate">
+                        <p>12.28.2023</p>
+                     </div>
+                     <div class="last-news__blockText">
+                        <p>Lorem ipsum dolor sit amet consectetur. Lacus id justo nunc amet rutrum.</p>
+                     </div>
+                  </a>
+                  <a href="single.html" class="last-news__item">
+                     <div class="last-news__blockImage">
+                        <img src="images/gallery/gallery-5.png" alt="">
+                     </div>
+                     <div class="last-news__blockDate">
+                        <p>12.28.2023</p>
+                     </div>
+                     <div class="last-news__blockText">
+                        <p>Lorem ipsum dolor sit</p>
+                     </div>
+                  </a>
+                  <a href="single.html" class="last-news__item">
+                     <div class="last-news__blockImage">
+                        <img src="images/gallery/gallery-3.png" alt="">
+                     </div>
+                     <div class="last-news__blockDate">
+                        <p>12.28.2023</p>
+                     </div>
+                     <div class="last-news__blockText">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                     </div>
+                  </a>
+               </div>
+               <a href="blog.html" class="last-news__btn n_btn">Read More</a>
+            </div>
+         </section>
+         <section class="gallery">
+            <div class="n_container">
+               <h2 class="n_sec-title">Gallery</h2>
+               <div class="gallery-slider swiper-conteiner">
+                  <div class="swiper-wrapper">
+                     <div class="gallery__items swiper-slide">
+                        <div class="gallery__item">
+                           <a href="images/gallery/gallery-1.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-1.png" alt="Name 1">
+                           </a>
+                        </div>
+                        <div class="gallery__item">
+                           <a href="images/gallery/gallery-2.jpg" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-2.jpg" alt="Name 2">
+                           </a>
+                        </div>
+                        <div class="gallery__item">
+                           <a href="images/gallery/gallery-3.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-3.png" alt="Name 3">
+                           </a>
+                        </div>
+                        <div class="gallery__item">
+                           <a href="images/gallery/gallery-4.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-4.png" alt="Name 4">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="gallery__items swiper-slide">
+                        <div class="gallery__item">
+                           <a href="images/gallery/gallery-5.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-5.png" alt="Name 5">
+                           </a>
+                        </div>
+                        <div class="gallery__item">
+                           <a href="images/gallery/gallery-1.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-1.png" alt="Name 1">
+                           </a>
+                        </div>
+                        <div class="gallery__item">
+                           <a href="images/gallery/gallery-6.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-6.png" alt="Name 6">
+                           </a>
+                        </div>
+                        <div class="gallery__item">
+                           <a href="images/gallery/gallery-3.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-3.png" alt="Name 3">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--<div class="gallery__wrap-slider-arrow">
+                  <div id="gallery-button-prev">left</div>
+                  <div id="gallery-button-next">right</div>
+               </div>-->
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+   <div class="n_container">
+      <div class="footer__items">
+         <div class="footer__item">
+            <div class="footer__item-content">
+               <h4>Catalog</h4>
+               <ul>
+                  <li><a href="#">Trailers For Rent</a></li>
+                  <li><a href="#">Trucks For Sale</a></li>
+                  <li><a href="#">Trailers For Sale</a></li>
+                  <li><a href="#">Semi-trailer For Sale</a></li>
+               </ul>
+               <p data-da="contact-column, 2, 575">Copyright 2024 Time To Lease LLC. All Rights Reserved</p>
+            </div>
+         </div>
+         <div class="footer__item">
+            <div class="footer__item-content contact-column">
+               <h4>Contacts</h4>
+               <ul>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  <li><a href="tel:208555-0112">(208) 555-0112</a></li>
+                  <li><a href="mailto:timetolease@gmail.com">timetolease@gmail.com</a></li>
+               </ul>
+               <p><a href="privacy-policy.html">Privacy Policy</a></p>
+            </div>
+         </div>
+         <div class="footer__item">
+            <div class="footer__wrap-btn">
+               <a href="#" class="footer__btn n_btn">Request a Quote</a>
+               <ul class="footer__social">
+                  <li>
+                     <a href="https://facebook.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="24" viewBox="0 0 13 24" fill="none">
+                           <path d="M0.964313 7.82981H3.84089V4.17023C3.84089 4.15905 3.84161 4.14804 3.843 4.13724C3.90228 3.01257 4.1296 1.99613 4.65355 1.24997C5.19701 0.476008 6.042 0 7.3194 0H11.926C12.067 0 12.1814 0.114328 12.1814 0.255325V3.94399C12.1814 4.08499 12.067 4.19932 11.926 4.19932H10.1076C9.6385 4.19932 9.28656 4.27116 9.05827 4.45969L8.89571 4.26323L9.05827 4.46011C9.05333 4.46418 9.04828 4.46801 9.04315 4.47166C8.83153 4.65523 8.71225 4.96377 8.68632 5.44089H8.68667V7.82979H11.926C12.067 7.82979 12.1814 7.94412 12.1814 8.08512V12C12.1814 12.141 12.067 12.2553 11.926 12.2553H8.68667V23.7447C8.68667 23.8857 8.57234 24 8.43135 24H4.09621C3.95522 24 3.84089 23.8857 3.84089 23.7447V12.2553H0.96431C0.823313 12.2553 0.708984 12.141 0.708984 12V8.08512C0.708984 7.94412 0.823316 7.82981 0.964313 7.82981Z" fill="black"/>
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.instagram.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                           <path d="M18.4884 4.41379C17.7109 4.41379 17.084 5.04075 17.084 5.81818C17.084 6.59561 17.7109 7.22257 18.4884 7.22257C19.2658 7.22257 19.8928 6.59561 19.8928 5.81818C19.8928 5.04075 19.2658 4.41379 18.4884 4.41379ZM12.2188 6.21944C8.95858 6.21944 6.30027 8.87774 6.30027 12.1379C6.30027 15.3981 8.95858 18.0564 12.2188 18.0564C15.479 18.0564 18.1373 15.3981 18.1373 12.1379C18.1373 8.87774 15.479 6.21944 12.2188 6.21944ZM12.2188 15.9498C10.1122 15.9498 8.43194 14.2445 8.43194 12.163C8.43194 10.0564 10.1373 8.37617 12.2188 8.37617C14.3254 8.37617 16.0056 10.0815 16.0056 12.163C16.0056 14.2445 14.3003 15.9498 12.2188 15.9498ZM24.1812 7.22257C24.1812 3.23511 20.946 0 16.9586 0H7.40372C3.41626 0 0.181152 3.23511 0.181152 7.22257V16.7774C0.181152 20.7649 3.41626 24 7.40372 24H16.9335C20.921 24 24.1561 20.7649 24.1561 16.7774V7.22257H24.1812ZM21.899 16.7523C21.899 19.4859 19.667 21.7179 16.9335 21.7179H7.40372C4.67018 21.7179 2.43821 19.4859 2.43821 16.7523V7.22257C2.43821 4.46395 4.6451 2.25705 7.40372 2.25705H16.9335C19.667 2.25705 21.899 4.48903 21.899 7.22257V16.7523Z" fill="black"/>
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.linkedin.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                           <path d="M25.2907 23.9992V14.715C25.2907 9.74014 22.6353 7.42536 19.0949 7.42536C16.2379 7.42536 14.9573 8.99706 14.2441 10.1003V7.80592H8.8612C8.93261 9.32584 8.8612 23.9992 8.8612 23.9992H14.2441V14.9559C14.2441 14.4733 14.2786 13.9891 14.4214 13.6439C14.8098 12.6764 15.6957 11.6751 17.1819 11.6751C19.1302 11.6751 19.9086 13.1597 19.9086 15.3364V24L25.2907 23.9992ZM3.19037 5.5955C5.06652 5.5955 6.23647 4.35101 6.23647 2.79657C6.20195 1.2084 5.06731 0 3.22647 0C1.38563 0 0.181152 1.20761 0.181152 2.79657C0.181152 4.35101 1.34953 5.5955 3.15663 5.5955H3.19037ZM5.8818 23.9992V7.80592H0.499729V23.9992H5.8818Z" fill="black"/>
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://web.whatsapp.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                           <g clip-path="url(#footer_icon)">
+                              <path d="M23.7471 11.3344C23.719 14.3062 22.9549 16.6312 21.3659 18.6515C19.6596 20.8219 17.4377 22.2 14.719 22.7578C12.619 23.1844 10.5752 22.9969 8.56899 22.2703C8.12368 22.1062 7.68774 21.914 7.27055 21.6844C7.14399 21.614 7.03618 21.6047 6.89555 21.6515C4.99712 22.2656 3.09399 22.875 1.19087 23.4797C1.10649 23.5078 0.993992 23.5875 0.928367 23.5265C0.853367 23.4515 0.947117 23.339 0.975242 23.25C1.35493 22.1203 1.73462 20.9859 2.11899 19.8562C2.35337 19.1672 2.57837 18.4828 2.82212 17.7984C2.88774 17.6203 2.8643 17.4844 2.76587 17.3203C2.28305 16.4953 1.9268 15.614 1.67368 14.6906C1.20024 12.9562 1.14868 11.2031 1.51899 9.44998C1.92212 7.53748 2.76587 5.83123 4.0643 4.35936C5.63462 2.57811 7.57055 1.40154 9.87212 0.834355C11.3393 0.473418 12.8206 0.417168 14.3112 0.660918C16.2612 0.979668 18.019 1.75311 19.5518 2.99998C21.1456 4.29842 22.3081 5.91092 23.0393 7.84685C23.4424 8.89217 23.7612 10.6031 23.7471 11.3344ZM3.78774 20.6953C4.95024 20.3203 6.06118 19.964 7.16274 19.6031C7.30805 19.5562 7.42524 19.5656 7.5518 19.65C7.97368 19.9312 8.42837 20.1562 8.89712 20.3531C10.4206 21 12.0049 21.2344 13.6409 21.0234C15.6471 20.7656 17.4096 19.9594 18.8909 18.5578C20.7565 16.7906 21.7549 14.625 21.844 12.0656C21.9284 9.55779 21.1221 7.35467 19.4393 5.48436C17.8409 3.70779 15.8346 2.69529 13.4674 2.44217C11.4096 2.22186 9.48305 2.66717 7.7018 3.73592C6.17837 4.65467 5.01118 5.90623 4.20024 7.48592C3.30493 9.22498 3.00024 11.0719 3.25805 13.0078C3.45024 14.4703 3.97524 15.8156 4.81899 17.025C4.91274 17.1609 4.94087 17.2734 4.88462 17.4328C4.71118 17.9109 4.55649 18.3937 4.39243 18.8719C4.19555 19.4625 4.00337 20.0531 3.78774 20.6953Z" fill="black"/>
+                              <path d="M6.90004 9.12665C6.92348 8.01103 7.31723 7.18134 8.06254 6.5204C8.3016 6.30478 8.59691 6.21103 8.92973 6.2579C9.07035 6.27665 9.21098 6.29071 9.3516 6.28134C9.6141 6.26728 9.79223 6.39384 9.88129 6.62353C10.1954 7.43915 10.5 8.25478 10.8047 9.07509C10.9079 9.35634 10.7297 9.57665 10.5797 9.77821C10.4063 10.0173 10.1954 10.2282 9.9891 10.4392C9.77816 10.6548 9.75004 10.7767 9.89535 11.0392C10.7438 12.5813 11.9344 13.7673 13.5516 14.4985C13.6079 14.522 13.6641 14.5548 13.7204 14.5829C13.936 14.6813 14.1282 14.6579 14.2922 14.4704C14.5922 14.1188 14.9204 13.7954 15.1969 13.4251C15.3797 13.1813 15.5063 13.1392 15.7829 13.261C16.6079 13.6173 17.3813 14.0673 18.1688 14.5032C18.3141 14.5829 18.3657 14.7048 18.361 14.8735C18.3188 16.2563 17.5266 16.9782 16.1344 17.297C15.4594 17.4517 14.836 17.2829 14.2172 17.0579C12.9188 16.5892 11.6672 16.036 10.6172 15.1079C9.78285 14.3673 9.04691 13.5423 8.42348 12.6188C7.94535 11.9063 7.44848 11.2079 7.17191 10.3782C7.01254 9.93759 6.89535 9.48759 6.90004 9.12665Z" fill="black"/>
+                           </g>
+                           <defs>
+                              <clipPath id="footer_icon">
+                                 <rect width="24" height="24" fill="white" transform="translate(0.291016)"/>
+                              </clipPath>
+                           </defs>
+                        </svg>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.tiktok.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                           <path d="M19.6124 5.56219C19.4605 5.4837 19.3127 5.39765 19.1694 5.30437C18.7528 5.02896 18.3709 4.70445 18.0318 4.33781C17.1833 3.36703 16.8665 2.38219 16.7497 1.69266H16.7544C16.6569 1.12031 16.6972 0.75 16.7033 0.75H12.839V15.6928C12.839 15.8934 12.839 16.0917 12.8305 16.2877C12.8305 16.312 12.8282 16.3345 12.8268 16.3608C12.8268 16.3716 12.8268 16.3828 12.8244 16.3941C12.8244 16.3969 12.8244 16.3997 12.8244 16.4025C12.7837 16.9386 12.6118 17.4566 12.3239 17.9107C12.0361 18.3648 11.641 18.7413 11.1735 19.0069C10.6862 19.2841 10.1352 19.4295 9.57458 19.4287C7.77412 19.4287 6.3149 17.9606 6.3149 16.1475C6.3149 14.3344 7.77412 12.8662 9.57458 12.8662C9.9154 12.8659 10.2541 12.9196 10.5782 13.0252L10.5829 9.09047C9.59913 8.9634 8.59973 9.04158 7.64773 9.32008C6.69572 9.59858 5.81176 10.0714 5.05161 10.7086C4.38555 11.2873 3.82559 11.9778 3.39693 12.7491C3.2338 13.0303 2.61833 14.1605 2.5438 15.9947C2.49693 17.0358 2.80958 18.1144 2.95865 18.5602V18.5695C3.0524 18.832 3.41568 19.7278 4.00771 20.483C4.4851 21.0887 5.04912 21.6208 5.68161 22.0622V22.0528L5.69099 22.0622C7.56177 23.3334 9.63599 23.25 9.63599 23.25C9.99505 23.2355 11.1979 23.25 12.5638 22.6027C14.0788 21.885 14.9413 20.8158 14.9413 20.8158C15.4923 20.1769 15.9305 19.4488 16.2369 18.6628C16.5866 17.7436 16.7033 16.6411 16.7033 16.2005V8.27297C16.7502 8.30109 17.3746 8.71406 17.3746 8.71406C17.3746 8.71406 18.2741 9.29062 19.6776 9.66609C20.6844 9.93328 22.041 9.98953 22.041 9.98953V6.15328C21.5657 6.20484 20.6005 6.05484 19.6124 5.56219Z" fill="black"/>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer__item">
+            <div id="map"></div>
+         </div>
+      </div>
+   </div>
+</footer>
+
+   </div>
+
+   <script src="js/script.min.js?_v=20231230024254"></script>
+   <script src="files/fancybox/fancybox.umd.js?_v=20231230024254"></script>
+   <!--<script src="files/js/jquery-3.6.1.min.js?_v=20231230024254"></script>
+   <script src="files/js/home-counter.js?_v=20231230024254"></script>-->
+   <script src="files/swiper/js/swiper-bundle.min.js?_v=20231230024254"></script>
+   <script src="files/swiper/js/our-partners-settings.js?_v=20231230024254"></script>
+   <script src="files/swiper/js/gallery-settings.js?_v=20231230024254"></script>
+
+   <script src="files/js/init-map.js?_v=20231230024254"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkUntpxgYywg_nlhREijLYWEUOHYan4dk&callback=initMap&_v=20231230024254"></script>
+</body>
+
+</html>
