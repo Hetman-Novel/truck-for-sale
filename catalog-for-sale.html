@@ -241,8 +241,8 @@
                               </ul>
                            </div>
                            <div class="truck-block__wrap-buttons two-buttons">
-                              <a href="#" class="n_btn buy">Buy</a>
-                              <a href="#" class="n_btn lease">Lease</a>
+                              <a href="#popup_01" class="n_btn buy popup-link">Buy</a>
+                              <a href="#popup_01" class="n_btn lease popup-link">Lease</a>
                            </div>
                         </div>
                      </div>
@@ -306,8 +306,8 @@
                               </ul>
                            </div>
                            <div class="truck-block__wrap-buttons two-buttons">
-                              <a href="#" class="n_btn buy">Buy</a>
-                              <a href="#" class="n_btn lease">Lease</a>
+                              <a href="#popup_01" class="n_btn buy popup-link">Buy</a>
+                              <a href="#popup_01" class="n_btn lease popup-link">Lease</a>
                            </div>
                         </div>
                      </div>
@@ -371,8 +371,8 @@
                               </ul>
                            </div>
                            <div class="truck-block__wrap-buttons two-buttons">
-                              <a href="#" class="n_btn buy">Buy</a>
-                              <a href="#" class="n_btn lease">Lease</a>
+                              <a href="#popup_01" class="n_btn buy popup-link">Buy</a>
+                              <a href="#popup_01" class="n_btn lease popup-link">Lease</a>
                            </div>
                         </div>
                      </div>
@@ -531,6 +531,40 @@
    </div>
 </footer>
 
+      <div id="popup_01" class="popup"> <!-- popup-video -->
+         <div class="popup__body">
+            <div class="popup__content"> <!-- popup__content-image -->
+               <!--<a href="" class="popup__close close-popup">X</a>-->
+         
+               <div class="popup__wrap-form show">
+                  <h2>Rent 2020 Benson Step Deck 54′ Alum</h2>
+                  <form class="popup__form" autocomplete="off">
+                     <label for="name"><span>*</span>Name</label>
+                     <input type="text" name="name" id="name">
+                     <label for="phone"><span>*</span>Phone</label>
+                     <input type="text" name="phone" id="phone">
+                     <label for="email">Email</label>
+                     <input type="text" name="email" id="email">
+                     <label for="email">Message</label>
+                     <input type="text" name="message" id="message">
+                     <label class="custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" name="privacy-policy">
+                        <span class="custom-checkbox__box"></span>
+                        Click to accept our (<a href="#" target="_blank">Privacy Policy</a>)</label>
+                     <!--<button type="submit">Send</button>-->
+                     <input type="submit" value="Sent" id="good-send">
+                  </form>
+               </div>
+
+               <div class="popup__successfully">
+                  <h2>Thank you! Application sent successfully</h2>
+                  <a href="" class="n_btn close-popup" id="good-send-ok">Ok</a>
+               </div>
+      
+            </div>
+         </div>
+      </div>
+
    </div>
 
    <script src="js/script.min.js?_v=20231230235726"></script>
@@ -547,6 +581,7 @@
    <!--<script src="files/js/jquery-3.6.1.min.js?_v=20231230235726"></script>-->
 
    <script src="files/js/switching-image-for-directory.js?_v=20231230235726"></script>
+   <script src="files/js/demo-for-popup.js?_v=20231230235726"></script>
 
    <script src="files/js/init-map.js?_v=20231230235726"></script>
    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkUntpxgYywg_nlhREijLYWEUOHYan4dk&callback=initMap&_v=20231230235726"></script>
