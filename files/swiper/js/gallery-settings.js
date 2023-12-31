@@ -7,6 +7,14 @@ if (window.matchMedia("(min-width: 576px)").matches) {
 if (window.matchMedia("(max-width: 575.98px)").matches) {
    const gallery_slider = document.querySelector('.gallery-slider')
    if (gallery_slider) {
+      gallery_slider.classList.add('swiper-conteiner')
+      document.querySelector('.gallery__items').classList.add('swiper-wrapper')
+
+      const gallery__items = document.querySelectorAll('.gallery__item')
+      gallery__items.forEach(function (galleryItem) {
+         galleryItem.classList.add('swiper-slide')
+      })
+
       new Swiper(gallery_slider, {
          navigation: {
             prevEl: '#gallery-button-prev',

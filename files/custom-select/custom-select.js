@@ -85,12 +85,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
 
-            // Показываем сообщение, если нет совпадений
-            if (!foundMatch) {
-                noResultMessage.classList.remove('hidden');
-            } else {
-                noResultMessage.classList.add('hidden');
-                updateSelectedFilter(selectedValue, filterType);
+            if (noResultMessage) {
+                // Показываем сообщение, если нет совпадений
+                if (!foundMatch) {
+                    noResultMessage.classList.remove('hidden');
+                } else {
+                    noResultMessage.classList.add('hidden');
+                    updateSelectedFilter(selectedValue, filterType);
+                }
             }
         }
 
