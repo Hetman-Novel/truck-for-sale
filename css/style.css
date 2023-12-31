@@ -2992,6 +2992,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-bottom: calc(69% + 2px);
   }
 
+  .gallery__wrap-slider-arrow {
+    opacity: 0;
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+
   .truck-block__gallery {
     margin-left: -5px;
     margin-right: -5px;
