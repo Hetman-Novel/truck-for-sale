@@ -1499,12 +1499,44 @@ a {
 }
 
 .header__btn-menu {
-  color: #fff;
-  font-size: 14px;
-  line-height: 14px;
-  min-width: 76px;
-  max-width: 76px;
-  padding: 13px 15px !important;
+  display: block;
+  height: 15px;
+  font-size: 0;
+  flex: 0 0 30px;
+  position: relative;
+  top: -2px;
+  width: 30px;
+}
+
+.header__btn-menu::before,
+.header__btn-menu::after {
+  background-color: #000;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  width: 100%;
+}
+
+.header__btn-menu::before {
+  top: 0;
+}
+
+.header__btn-menu::after {
+  bottom: 0;
+}
+
+.header__btn-menu._active {
+  top: 4px;
+}
+
+.header__btn-menu._active::before {
+  transform: rotate(45deg);
+}
+
+.header__btn-menu._active::after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 /* Top menu */
@@ -2027,6 +2059,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.last-news__blockText {
+  max-width: 381px;
+}
+
 .last-news__blockText p {
   font-size: 20px;
   font-weight: 500;
@@ -2387,6 +2423,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   justify-content: center;
   margin-bottom: 33px;
   margin-top: 50px;
+  width: 100%;
 }
 
 .navigation .screen-reader-text {
@@ -2671,6 +2708,123 @@ body._touch .header .menu__list > li._active .menu__arrow {
   text-align: center;
 }
 
+/* Page - Blog */
+
+.blog-page .last-news__items {
+  margin-top: 23px;
+}
+
+.blog-page .last-news__item {
+  margin-bottom: 40px;
+}
+
+/* Page - Blog single */
+
+.single-page .gallery {
+  padding-bottom: 16px;
+  padding-top: 29px !important;
+}
+
+.single-page .page__content:last-child {
+  padding-bottom: 14px;
+}
+
+.wp-block-group__inner-container {
+  padding-top: 0;
+}
+
+.wp-block-group__inner-container .wp-block-image {
+  min-height: 80px;
+  position: relative;
+}
+
+.wp-block-group__inner-container .wp-block-image img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Page - Contact */
+
+.contact-page .request-a-quote__form {
+  padding-top: 0;
+}
+
+.contact-page .request-a-quote__form label:first-child {
+  margin-top: 0;
+}
+
+.contact-page .request-a-quote__form .custom-checkbox {
+  margin-bottom: 37px;
+  margin-top: 50px;
+}
+
+.contact__items {
+  margin-bottom: 62px;
+  margin-top: 39px;
+}
+
+.contact__blockImage {
+  position: relative;
+  width: 100%;
+}
+
+.contact__blockImage img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Page - 404 */
+
+.page-not-found {
+  display: flex;
+}
+
+.page-not-found .n_container {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.page-not-found .page__content {
+  padding-bottom: 119px;
+  padding-top: 81px;
+  text-align: center;
+}
+
+.page-not-found .page__content h1,
+.page-not-found .page__content h2,
+.page-not-found .page__content h3,
+.page-not-found .page__content h4,
+.page-not-found .page__content h5,
+.page-not-found .page__content h6 {
+  color: #D01F1F;
+  font-size: 45.482px;
+  line-height: 38.66px;
+  letter-spacing: 0.455px;
+}
+
+.page-not-found .page__content p {
+  margin: 17px 0 25px;
+}
+
+.page-not-found .page__content a.n_btn {
+  background-color: #D01F1F;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 135px;
+}
+
+/* Page - Confidentiality Policy */
+
 /* Footer */
 
 .footer {
@@ -2683,9 +2837,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .footer__item:nth-child(3) {
-  align-items: flex-start;
-  display: flex;
-  flex: 0 0 186px;
+  flex: 0 0 240px;
 }
 
 .footer__item h1,
@@ -2852,8 +3004,29 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: calc(25% - 10px);
   }
 
+  .blog-page .last-news__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+
+  .blog-page .last-news__item {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    width: calc(50% - 15px);
+  }
+
+  .blog-page .navigation {
+    margin-top: -8px;
+  }
+
+  .confidentiality-policy-page .page__content {
+    padding-bottom: 48px;
+  }
+
   .footer {
-    padding-bottom: 35px;
+    padding-bottom: 20px;
   }
 
   .footer__items {
@@ -2866,8 +3039,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-right: 20px;
-    width: calc(50% - 93px);
+    width: 50%;
   }
 
   .footer__item:nth-child(1) .footer__item-content {
@@ -2880,10 +3052,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-right: auto;
   }
 
-  .footer__item:last-child {
-    order: -1;
-  }
-
   .footer__item p a {
     position: relative;
     top: 17px;
@@ -2891,13 +3059,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .footer__item-content {
     max-width: 280px;
-  }
-
-  .footer__wrap-btn {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 17px;
-    margin-top: auto;
   }
 
   .footer__social {
@@ -2975,6 +3136,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .last-news__blockImage {
     padding-bottom: calc(52% - 1px);
+  }
+
+  .blog-page .last-news__item {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    width: calc(33.3333% - 15px);
   }
 }
 
@@ -3067,6 +3234,49 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .truck-block__info {
     padding-left: 35px;
   }
+
+  .wp-block-group__inner-container .wp-block-image {
+    height: 200px;
+    float: right;
+    margin-left: 40px;
+    position: relative;
+    top: -6px;
+    width: 380px;
+  }
+
+  .footer__item:nth-child(1),
+  .footer__item:nth-child(2) {
+    padding-right: 20px;
+    width: calc(50% - 120px);
+  }
+
+  .footer__wrap-btn {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex: 0 0 186px;
+    margin-bottom: 17px;
+    margin-left: auto;
+    margin-top: 33px;
+  }
+}
+
+@media screen and (min-width: 861px) {
+  .contact__items {
+    display: flex;
+  }
+
+  .contact__item:nth-child(1) {
+    width: calc(49% + 3px);
+  }
+
+  .contact__item:nth-child(2) {
+    padding-left: 30px;
+    width: calc(51% - 3px);
+  }
+
+  .contact__blockImage {
+    height: 606px;
+  }
 }
 
 @media screen and (min-width: 961px) {
@@ -3100,36 +3310,23 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: 25%;
   }
 
-  .footer__item:nth-child(1),
-  .footer__item:nth-child(2) {
-    width: calc(50% - 264px);
-  }
-
-  .footer__item:nth-child(1) .footer__item-content {
-    margin-left: auto;
-    padding-left: 35px;
-  }
-
-  .footer__item:nth-child(2) .footer__item-content {
-    padding-left: 35px;
-  }
-
-  .footer__item:last-child {
-    flex: 0 0 342px;
-  }
-
   .footer__item-content {
     max-width: 305px;
-  }
-
-  #map {
-    min-height: 238px;
   }
 }
 
 @media screen and (min-width: 1025px) {
   .schedule__blockImage {
     min-height: 98px;
+  }
+
+  .wp-block-group__inner-container .wp-block-image {
+    height: 316px;
+    width: 492px;
+  }
+
+  .footer {
+    padding-bottom: 40px;
   }
 }
 
@@ -3156,6 +3353,37 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .truck-block__info {
     padding-left: 52px;
+  }
+
+  .contact__item:nth-child(2) {
+    padding-left: 58px;
+  }
+
+  .footer__item:nth-child(1),
+  .footer__item:nth-child(2) {
+    width: calc(50% - 291px);
+  }
+
+  .footer__item:nth-child(1) .footer__item-content {
+    margin-left: auto;
+    padding-left: 35px;
+  }
+
+  .footer__item:nth-child(2) .footer__item-content {
+    padding-left: 35px;
+  }
+
+  .footer__item:last-child {
+    flex: 0 0 342px;
+    order: -1;
+  }
+
+  .footer__wrap-logo {
+    padding-top: 4px;
+  }
+
+  #map {
+    min-height: 238px;
   }
 }
 
@@ -3427,6 +3655,15 @@ body._touch .header .menu__list > li._active .menu__arrow {
     max-width: 206px;
   }
 
+  .header__phone {
+    color: #000;
+    display: block;
+    margin-right: 30px;
+    margin-left: auto;
+    top: -2px;
+    z-index: 5;
+  }
+
   .header__btn {
     min-width: 170px;
     max-width: 170px;
@@ -3446,6 +3683,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .first-screen .n_container {
     height: 620px;
     padding-bottom: 0;
+  }
+
+  .footer__item:last-child {
+    margin-top: 30px;
   }
 }
 
@@ -3793,10 +4034,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .header-container {
     height: 73px;
   }
-
-  .footer__item:last-child {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (max-width: 960.98px) {
@@ -3822,6 +4059,21 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .schedule__blockImage {
     padding-bottom: calc(33% - 2px);
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 860.98px) {
+  .contact-page .request-a-quote__form {
+    padding-top: 28px;
+  }
+
+  .contact__items {
+    margin-bottom: 4px;
+    margin-top: 30px;
+  }
+
+  .contact__blockImage {
+    padding-bottom: 52%;
   }
 }
 
@@ -3874,9 +4126,55 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .truck-block__info {
     padding-top: 25px;
   }
+
+  .wp-block-group__inner-container .wp-block-image {
+    margin-bottom: 25px;
+    padding-bottom: 52%;
+  }
+
+  .footer__item:nth-child(2) .footer__item-content {
+    padding-left: 15px;
+  }
+
+  .footer__item:nth-child(3) {
+    flex: 0 0 100%;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  .footer__wrap-btn {
+    margin-top: 25px;
+  }
+
+  .footer__social {
+    margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
+  .header__phone {
+    margin-right: 16px;
+    padding: 0;
+    top: -3px;
+  }
+
+  .header__btn-menu {
+    height: 8px;
+    flex: 0 0 23px;
+    width: 23px;
+  }
+
+  .header__btn-menu::before,
+  .header__btn-menu::after {
+    height: 2px;
+  }
+
+  .header__btn-menu._active {
+    top: 0;
+  }
+
   .our-offers__item {
     margin-bottom: 40px;
   }
@@ -4033,6 +4331,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
     line-height: 19.55px;
     letter-spacing: 0.23px;
     max-width: 317px;
+  }
+
+  .header__blockLogo {
+    padding-right: 15px;
+    min-width: auto;
+    max-width: 181px;
   }
 
   .first-screen__block h1 {
@@ -4304,12 +4608,54 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: 100%;
   }
 
+  .blog-page {
+    margin-bottom: -50px;
+  }
+
+  .blog-page .last-news__items {
+    margin-top: 11px;
+  }
+
+  .single-page .page__content:last-child {
+    padding-bottom: 36px;
+    padding-top: 14px;
+  }
+
+  .contact-page .request-a-quote__form .custom-checkbox {
+    margin-bottom: 36px;
+    margin-top: 38px;
+  }
+
+  .page-not-found .page__content {
+    padding-bottom: 64px;
+    padding-top: 73px;
+  }
+
+  .page-not-found .page__content h1,
+  .page-not-found .page__content h2,
+  .page-not-found .page__content h3,
+  .page-not-found .page__content h4,
+  .page-not-found .page__content h5,
+  .page-not-found .page__content h6 {
+    font-size: 40px;
+    line-height: 34px;
+    letter-spacing: 0.4px;
+  }
+
+  .page-not-found .page__content p {
+    margin: -8px 0 23px;
+  }
+
   .footer {
     padding-top: 77px;
   }
 
   .footer__item {
     margin-bottom: 40px;
+  }
+
+  .footer__item:nth-child(2) .footer__item-content {
+    padding-left: 0;
   }
 
   .footer__item:last-child {
@@ -4324,10 +4670,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .footer__wrap-btn {
     align-items: center;
     margin-top: 2px;
-  }
-
-  .footer__social {
-    margin-left: 20px;
   }
 }
 
