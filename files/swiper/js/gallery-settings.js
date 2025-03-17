@@ -15,9 +15,9 @@ if (gallery_slider) {
       effect: 'slide',
       breakpoints: {
          0: {
-            slidesPerView: 1,
+            slidesPerView: 1.04,
          },
-         541: {
+         576: {
             slidesPerView: 2,
          },
          768: {

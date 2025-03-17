@@ -12,16 +12,20 @@ if (our_partners_slider) {
         speed: 800,
         effect: 'slide',
         breakpoints: {
-            320: {
-                slidesPerView: 2,
+            0: {
+                slidesPerView: 1.7,
                 spaceBetween: 20,
+            },
+            541: {
+                slidesPerView: 2,
+                spaceBetween: 30,
             },
             700: {
                 slidesPerView: 3,
                 spaceBetween: 30,
             },
-            992: {
-                slidesPerView: 4,
+            1025: {
+                slidesPerView: 3,
                 spaceBetween: 50,
             },
             1100: {
