@@ -4,10 +4,10 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250318030249">
-   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20250318030249">
-   <link rel="stylesheet" href="files/custom-select/custom-select.css?_v=20250318030249">
-   <link rel="stylesheet" href="css/style.min.css?_v=20250318030249">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250318215044">
+   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20250318215044">
+   <link rel="stylesheet" href="files/custom-select/custom-select.css?_v=20250318215044">
+   <link rel="stylesheet" href="css/style.min.css?_v=20250318215044">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>Trucks For Sale</title>
 </head>
@@ -107,6 +107,19 @@
             <div class="catalog-filter">
                <div class="catalog-filter__items">
                   <div class="catalog-filter__item">
+                     <button id="show-filter" type="button" class="catalog-filter__show-btn">
+                        <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M20 3L27 3" stroke="black" stroke-width="2"/>
+                           <path d="M20 6V-8.9407e-08" stroke="black" stroke-width="2"/>
+                           <path d="M0 3H17" stroke="black" stroke-width="2"/>
+                           <path d="M7 13L-2.98023e-08 13" stroke="black" stroke-width="2"/>
+                           <path d="M7 16L7 10" stroke="black" stroke-width="2"/>
+                           <path d="M27 13H10" stroke="black" stroke-width="2"/>
+                           <path d="M20 23L27 23" stroke="black" stroke-width="2"/>
+                           <path d="M20 26V20" stroke="black" stroke-width="2"/>
+                           <path d="M0 23H17" stroke="black" stroke-width="2"/>
+                        </svg>
+                     </button>
                      <div class="catalog-filter__wrap-selects">
                         <div class="custom-select js-custom-select" data-filter-type="model">
                            <input class="custom-select__value" type="hidden" name="model" value="0">
@@ -161,6 +174,29 @@
                               </ul>
                            </div>
                         </div>
+                        <div class="catalog-filter__radio">
+                           <label>
+                              <input type="radio" name="product" checked>
+                              <span class="radio-custom"></span>
+                              Buy
+                           </label>
+                           <label>
+                              <input type="radio" name="product">
+                              <span class="radio-custom"></span>
+                              Lease
+                           </label>
+                           <label>
+                              <input type="radio" name="product">
+                              <span class="radio-custom"></span>
+                              Rent
+                           </label>
+                        </div>
+                        <button id="close-filter" type="button" class="catalog-filter__close">
+                           <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="33" height="33" fill="#C5C5C5"/>
+                              <path d="M15.7619 17.0001L8.50465 9.74463C8.4233 9.66327 8.35876 9.56669 8.31474 9.4604C8.27071 9.35411 8.24805 9.24018 8.24805 9.12513C8.24805 9.01008 8.27071 8.89615 8.31474 8.78986C8.35876 8.68356 8.4233 8.58698 8.50465 8.50563C8.58601 8.42427 8.68259 8.35974 8.78888 8.31571C8.89518 8.27168 9.0091 8.24902 9.12415 8.24902C9.2392 8.24902 9.35313 8.27168 9.45942 8.31571C9.56572 8.35974 9.6623 8.42427 9.74365 8.50563L16.9992 15.7629L24.2547 8.50563C24.419 8.34133 24.6418 8.24902 24.8742 8.24902C25.1065 8.24902 25.3293 8.34133 25.4937 8.50563C25.658 8.66993 25.7503 8.89277 25.7503 9.12513C25.7503 9.35749 25.658 9.58033 25.4937 9.74463L18.2364 17.0001L25.4937 24.2556C25.658 24.4199 25.7503 24.6428 25.7503 24.8751C25.7503 25.1075 25.658 25.3303 25.4937 25.4946C25.3293 25.6589 25.1065 25.7512 24.8742 25.7512C24.6418 25.7512 24.419 25.6589 24.2547 25.4946L16.9992 18.2374L9.74365 25.4946C9.57935 25.6589 9.35651 25.7512 9.12415 25.7512C8.89179 25.7512 8.66895 25.6589 8.50465 25.4946C8.34035 25.3303 8.24805 25.1075 8.24805 24.8751C8.24805 24.6428 8.34035 24.4199 8.50465 24.2556L15.7619 17.0001Z" fill="black"/>
+                           </svg>
+                        </button>
                      </div>
                   </div>
                   <div class="catalog-filter__item">
@@ -387,7 +423,7 @@
                   </div>
                </nav>
             </div>
-            <article class="page__content">
+            <!--<article class="page__content">
                <h3>Trucks For Sale</h3>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare, urna eu sagittis tempus, dui turpis lobortis elit, eu laoreet est augue ac leo. Donec eget dolor egestas, commodo magna nec, fringilla libero. Sed sapien lorem, ultrices id convallis non, eleifend at erat. Aenean tempor, urna et lacinia finibus, magna enim porta turpis, id posuere nisi orci nec lectus. Nam volutpat sapien eget tortor lobortis, et pellentesque arcu convallis. Donec dictum mi sit amet maximus ornare. Phasellus hendrerit dolor ac enim venenatis, non dapibus sem ultrices. Proin vel pretium ipsum, posuere condimentum augue. Mauris scelerisque sem in turpis dictum ornare. Proin eu elementum sem.</p>
                <ol>
@@ -405,34 +441,72 @@
                   <li>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi hendrerit magna ac nisi iaculis, sit amet consequat metus porttitor.</li>
                   <li>Nulla ante nunc, finibus in mauris in, placerat ullamcorper nisl. Curabitur eu nibh ut nisl laoreet orci aliquam.</li>
                </ul>
-            </article>
+            </article>-->
          </div>
-         <div class="gallery">
+         <section class="gallery">
             <div class="n_container">
-               <div class="gallery__items">
-                  <div class="gallery__item">
-                     <a href="images/gallery/gallery-1.png" class="gallery__blockImage js-fancybox-image">
-                        <img src="images/gallery/gallery-1.png" alt="Name 1">
-                     </a>
+               <div class="gallery__wrap-slider">
+                  <div class="gallery-slider">
+                     <div class="swiper-wrapper gallery__items">
+                        <div class="swiper-slide gallery__item">
+                           <a href="images/gallery/gallery-1.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-1.png" alt="Name 1">
+                           </a>
+                        </div>
+                        <div class="swiper-slide gallery__item">
+                           <a href="images/gallery/gallery-2.jpg" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-2.jpg" alt="Name 2">
+                           </a>
+                        </div>
+                        <div class="swiper-slide gallery__item">
+                           <a href="images/gallery/gallery-3.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-3.png" alt="Name 3">
+                           </a>
+                        </div>
+                        <div class="swiper-slide gallery__item">
+                           <a href="images/gallery/gallery-4.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-4.png" alt="Name 4">
+                           </a>
+                        </div>
+                        <div class="swiper-slide gallery__item">
+                           <a href="images/gallery/gallery-5.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-5.png" alt="Name 5">
+                           </a>
+                        </div>
+                        <div class="swiper-slide gallery__item">
+                           <a href="images/gallery/gallery-1.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-1.png" alt="Name 1">
+                           </a>
+                        </div>
+                        <div class="swiper-slide gallery__item">
+                           <a href="images/gallery/gallery-6.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-6.png" alt="Name 6">
+                           </a>
+                        </div>
+                        <div class="swiper-slide gallery__item">
+                           <a href="images/gallery/gallery-3.png" class="gallery__blockImage js-fancybox-image">
+                              <img src="images/gallery/gallery-3.png" alt="Name 3">
+                           </a>
+                        </div>
+                     </div>
                   </div>
-                  <div class="gallery__item">
-                     <a href="images/gallery/gallery-2.jpg" class="gallery__blockImage js-fancybox-image">
-                        <img src="images/gallery/gallery-2.jpg" alt="Name 2">
-                     </a>
-                  </div>
-                  <div class="gallery__item">
-                     <a href="images/gallery/gallery-3.png" class="gallery__blockImage js-fancybox-image">
-                        <img src="images/gallery/gallery-3.png" alt="Name 3">
-                     </a>
-                  </div>
-                  <div class="gallery__item">
-                     <a href="images/gallery/gallery-4.png" class="gallery__blockImage js-fancybox-image">
-                        <img src="images/gallery/gallery-4.png" alt="Name 4">
-                     </a>
+                  <div class="gallery__wrap-slider-arrow">
+                     <div id="gallery-button-prev" class="gallery__slider-arrow prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="46" viewBox="0 0 45 46" fill="none">
+                           <circle cx="22.5" cy="23.0996" r="22.5" fill="#E8E8E8"/>
+                           <path d="M19.5 16.5996L26.5 22.5996L19.5 28.5996" stroke="#1D2327" stroke-width="2"/>
+                        </svg>
+                     </div>
+                     <div id="gallery-button-next" class="gallery__slider-arrow next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="46" viewBox="0 0 45 46" fill="none">
+                           <circle cx="22.5" cy="23.0996" r="22.5" fill="#E8E8E8"/>
+                           <path d="M19.5 16.5996L26.5 22.5996L19.5 28.5996" stroke="#1D2327" stroke-width="2"/>
+                        </svg>
+                     </div>
                   </div>
                </div>
             </div>
-         </div>
+         </section>
       </main>
       <footer class="footer">
    <div class="n_container">
@@ -554,24 +628,27 @@
 
    </div>
 
-   <script src="js/script.min.js?_v=20250318030249"></script>
+   <script src="js/script.min.js?_v=20250318215044"></script>
 
-   <script src="files/custom-select/custom-select.js?_v=20250318030249"></script>
+   <script src="files/custom-select/custom-select.js?_v=20250318215044"></script>
 
-   <script src="files/fancybox/fancybox.umd.js?_v=20250318030249"></script>
+   <script src="files/fancybox/fancybox.umd.js?_v=20250318215044"></script>
    <script>
       Fancybox.bind(".js-fancybox-catalog-gallery-1",{ groupAll: true})
       Fancybox.bind(".js-fancybox-catalog-gallery-2",{ groupAll: true})
       Fancybox.bind(".js-fancybox-catalog-gallery-3",{ groupAll: true})
    </script>
 
-   <!--<script src="files/js/jquery-3.6.1.min.js?_v=20250318030249"></script>-->
+   <!--<script src="files/js/jquery-3.6.1.min.js?_v=20250318215044"></script>-->
 
-   <script src="files/js/switching-image-for-directory.js?_v=20250318030249"></script>
-   <script src="files/js/demo-for-popup.js?_v=20250318030249"></script>
+   <script src="files/js/switching-image-for-directory.js?_v=20250318215044"></script>
+   <script src="files/js/demo-for-popup.js?_v=20250318215044"></script>
 
-   <script src="files/js/init-map.js?_v=20250318030249"></script>
-   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkUntpxgYywg_nlhREijLYWEUOHYan4dk&callback=initMap&_v=20250318030249"></script>
+   <script src="files/swiper/js/swiper-bundle.min.js?_v=20250318215044"></script>
+   <script src="files/swiper/js/gallery-settings.js?_v=20250318215044"></script>
+
+   <script src="files/js/init-map.js?_v=20250318215044"></script>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkUntpxgYywg_nlhREijLYWEUOHYan4dk&callback=initMap&_v=20250318215044"></script>
 </body>
 
 </html>
