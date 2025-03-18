@@ -4,10 +4,10 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250317224511">
-   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20250317224511">
-   <link rel="stylesheet" href="files/custom-select/custom-select.css?_v=20250317224511">
-   <link rel="stylesheet" href="css/style.min.css?_v=20250317224511">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250318030249">
+   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20250318030249">
+   <link rel="stylesheet" href="files/custom-select/custom-select.css?_v=20250318030249">
+   <link rel="stylesheet" href="css/style.min.css?_v=20250318030249">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>About</title>
 </head>
@@ -45,9 +45,11 @@
                      <li class="menu-item menu-item-has-children current-menu-item current_page_item">
                         <a class="menu__link" href="catalog-for-rent.html">Leasing/Rental/Sales Inventory</a>
                         <span class="menu__arrow">
-                           <svg width="10" height="10" viewBox="0 0 24 24">
-                              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
-                                 fill="currentColor" />
+                           <svg class="desktop" width="10" height="10" viewBox="0 0 24 24">
+                              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" fill="currentColor" />
+                           </svg>
+                           <svg class="mobile" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 14L12 7L0 0V14Z" fill="white"/>
                            </svg>
                         </span>
                         <ul class="menu__sub-list">
@@ -69,12 +71,20 @@
                         <a class="menu__link" href="contact-us.html">Contact Us</a>
                      </li>
                   </ul>
+                  <button id="close-menu" type="button" class="header__close-m">
+                     <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="33" height="33" fill="#C5C5C5"/>
+                        <path d="M15.7619 17.0001L8.50465 9.74463C8.4233 9.66327 8.35876 9.56669 8.31474 9.4604C8.27071 9.35411 8.24805 9.24018 8.24805 9.12513C8.24805 9.01008 8.27071 8.89615 8.31474 8.78986C8.35876 8.68356 8.4233 8.58698 8.50465 8.50563C8.58601 8.42427 8.68259 8.35974 8.78888 8.31571C8.89518 8.27168 9.0091 8.24902 9.12415 8.24902C9.2392 8.24902 9.35313 8.27168 9.45942 8.31571C9.56572 8.35974 9.6623 8.42427 9.74365 8.50563L16.9992 15.7629L24.2547 8.50563C24.419 8.34133 24.6418 8.24902 24.8742 8.24902C25.1065 8.24902 25.3293 8.34133 25.4937 8.50563C25.658 8.66993 25.7503 8.89277 25.7503 9.12513C25.7503 9.35749 25.658 9.58033 25.4937 9.74463L18.2364 17.0001L25.4937 24.2556C25.658 24.4199 25.7503 24.6428 25.7503 24.8751C25.7503 25.1075 25.658 25.3303 25.4937 25.4946C25.3293 25.6589 25.1065 25.7512 24.8742 25.7512C24.6418 25.7512 24.419 25.6589 24.2547 25.4946L16.9992 18.2374L9.74365 25.4946C9.57935 25.6589 9.35651 25.7512 9.12415 25.7512C8.89179 25.7512 8.66895 25.6589 8.50465 25.4946C8.34035 25.3303 8.24805 25.1075 8.24805 24.8751C8.24805 24.6428 8.34035 24.4199 8.50465 24.2556L15.7619 17.0001Z" fill="black"/>
+                     </svg>
+                  </button>
                </nav>
             </div>
          </div>
          <a href="tel:208555-0112" class="header__phone">(208) 555-0112</a>
          <a data-da="menu__body, last, 1099" href="#" class="header__btn n_btn hidden">Quote now</a>
-         <button type="button" class="header__btn-menu menu__icon">Menu</button>
+         <button type="button" class="header__btn-menu menu__icon">
+            <span></span>
+         </button>
       </div>
    </div>
 </header>
@@ -136,6 +146,7 @@
                         <div class="wrap-text">
                            <p>We empower our clients to succeed by providing high-quality commercial trucks and exceptional service. Our goal is to be the go-to source for individuals and businesses seeking tailored solutions for renting, leasing, or purchasing commercial trucks.</p>
                         </div>
+                        <div class="contact-about__bg-line"></div>
                      </div>
                      <img class="contact-about__illustration about" src="images/page-about-illustration.png" alt="">
                   </div>
@@ -393,14 +404,14 @@
 </footer>
    </div>
 
-   <script src="js/script.min.js?_v=20250317224511"></script>
-   <script src="files/fancybox/fancybox.umd.js?_v=20250317224511"></script>
-   <!--<script src="files/js/jquery-3.6.1.min.js?_v=20250317224511"></script>-->
-   <script src="files/swiper/js/swiper-bundle.min.js?_v=20250317224511"></script>
-   <script src="files/swiper/js/gallery-settings.js?_v=20250317224511"></script>
+   <script src="js/script.min.js?_v=20250318030249"></script>
+   <script src="files/fancybox/fancybox.umd.js?_v=20250318030249"></script>
+   <!--<script src="files/js/jquery-3.6.1.min.js?_v=20250318030249"></script>-->
+   <script src="files/swiper/js/swiper-bundle.min.js?_v=20250318030249"></script>
+   <script src="files/swiper/js/gallery-settings.js?_v=20250318030249"></script>
 
-   <script src="files/js/init-map.js?_v=20250317224511"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkUntpxgYywg_nlhREijLYWEUOHYan4dk&callback=initMap&_v=20250317224511"></script>
+   <script src="files/js/init-map.js?_v=20250318030249"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkUntpxgYywg_nlhREijLYWEUOHYan4dk&callback=initMap&_v=20250318030249"></script>
 </body>
 
 </html>
